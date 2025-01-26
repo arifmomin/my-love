@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('./asstes//Fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
+    font-family: "Elsie Swash Caps", serif;
+    src: url('./asstes//Fonts/ElsieSwashCaps-Regular.ttf');
+}
+@layer components{
+    .social-icon{
+        @apply
+        w-[40px]
+        h-[40px]
+        bg-transparent
+        rounded-full
+        border
+        border-gray-300
+        flex
+        justify-center
+        items-center
+        text-base
+        text-black
+        cursor-pointer
+        ease-linear
+        duration-200
+        hover:border-fontColor
+        hover:text-fontColor
+    }
+    .heading{
+        @apply
+        text-[36px]
+        text-fontColor
+        font-medium
+        font-greatvibs
+        text-center
+        capitalize
+    }
+    .story-title{
+        @apply
+        text-[46px]
+        text-fontColor
+        font-medium
+        font-greatvibs
+    }
+}
+
+:root{
+    --brand-color: #EDFBFE;
+    --font-color: #0fbcdacb;
+    --color: #F45474;
+    --great-vibs: 'Great Vibes', cursive;
+    --roboto-slab: "Roboto Slab", serif;
+    --swash-caps: "Elsie Swash Caps", serif;
+}
+*{
+    padding: 0;
+    margin: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    padding: 0 100px;
+    margin: 0% auto;
+}
+.container {
+    @media (min-width: 1180px) {
+      width: 95% !important;
+    }
+    @media (max-width: 1179px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    max-width: 1856px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+.input-left::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../src/WelcomePage/WelcomeImage/input.png') no-repeat center;
+    background-size: cover;
+}
+.input-left input::placeholder{
+    font: 400 18px/20px var(--roboto-slab);
+}
+.input-left a:hover{
+    transform: translateX(5px);
+}
+.welcome-LeftName::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: -39%;
+    background: url(/src/WelcomePage/WelcomeImage/left-name.png) no-repeat center;
+    background-size: cover;
+    width: 180px;
+    height: 129px;
+}
+.welcome-LeftName::before {
+    content: 'Shakil';
+    position: absolute;
+    bottom: -2%;
+    left: -53%;
+    font: 600 46px/36px var(--roboto-slab);
+    color: var(--font-color);
+}
+.welcome-RightName::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    right: -39%;
+    background: url(/src/WelcomePage/WelcomeImage/right-name.png) no-repeat center;
+    background-size: cover;
+    width: 180px;
+    height: 129px;
+}
+.welcome-RightName::before {
+    content: 'Kajol';
+    position: absolute;
+    bottom: -2%;
+    right: -53%;
+    font: 600 46px/36px var(--roboto-slab);
+    color: var(--font-color);
+}
+.Banner{
+    background: url(/src/Component/Banner/BannerImage/banner-bg.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+.Banner::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.70);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.social-icon:hover{
+    transform: translateY(-5px);
+}
+#about-us::after {
+    content: '';
+    position: absolute;
+    top: 29%;
+    left: 0%;
+    background: url(/src/Component/AboutUs/AboutUsImage/shape-1.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
+}
+#about-us::before {
+    content: '';
+    position: absolute;
+    top: 29%;
+    right: 0%;
+    background: url(/src/Component/AboutUs/AboutUsImage/shape-2.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
+}
+
+@media (max-width: 576px){
+    .input-left::after{
+        display: none;
+    }
+    .input-left input::placeholder{
+        font: 400 12px/16px var(--roboto-slab);
+    }
+    .welcome-LeftName::after {
+        bottom: 25%;
+        left: -12%;
+        width: 42px;
+        height: 30px;
+    }
+    .welcome-RightName::after {
+        bottom: 25%;
+        right: -12%;
+        width: 42px;
+        height: 30px;
+    }
+    .welcome-LeftName::before {
+        bottom: 10%;
+        left: -33%;
+        font: 600 14px/36px var(--roboto-slab);
+    }
+    .welcome-RightName::before {
+        bottom: 10%;
+        right: -33%;
+        font: 600 14px/36px var(--roboto-slab);
+    }
+}
