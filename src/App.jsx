@@ -1,5 +1,5 @@
 import React from 'react'
-import Welcome from './WelcomePage/welcome';
+import Welcome from './WelcomePage/Welcome';
 import { ToastContainer } from 'react-toastify';
 import Home from './Home/Home';
 import {
