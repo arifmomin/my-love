@@ -8,7 +8,7 @@ const Banner = () => {
         <Navbar/>
       </div>
       <div className='container'>
-       <div className='flex flex-col justify-center items-center pt-20 md:pt-40 pb-20 md:pb-36'>
+       <div className='flex flex-col justify-center items-center pt-32 md:pt-40 pb-32 md:pb-36'>
         <h2 className='text-2xl md:text-[36px] text-fontColor font-medium font-greatvibs'>Shakil & Kajol</h2>
        <h1 className='text-[36px] leading-[42px] md:text-[66px] md:leading-[76px] text-fontColor font-semibold font-caps max-w-[923px] text-center mt-4 md:mt-0 mb-6 md:mb-10'>
         From Strangers to Soulmates The Journey of Us

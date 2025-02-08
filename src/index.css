@@ -44,10 +44,19 @@
     }
     .story-title{
         @apply
-        text-[46px]
+        mt-[10px]
+        md:mt-0
+        text-[36px]
+        md:text-[46px]
         text-fontColor
         font-medium
         font-greatvibs
+    }
+    .story-image{
+        @apply
+        w-full
+        rounded-lg
+        md:rounded-none
     }
 }
 

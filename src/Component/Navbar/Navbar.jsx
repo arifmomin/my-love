@@ -55,8 +55,8 @@ const handlemenuopen = () =>{
       <div>
         <a href='our-love' className='Logo text-xl md:text-3xl text-white font-semibold font-caps'>Shakil & Kajol</a>
       </div>
-      <div className='hidden md:block'>
-        <ul className='menu-list flex justify-center items-center gap-x-[32px]'>
+      <div className='hidden md:block relative'>
+        <ul className='menu-list md:flex justify-center items-center gap-x-[32px] absolute'>
           <li className='text-[18px] text-white font-normal font-roboto ease-linear duration-200 hover:text-fontColor'>
             <a href="">Home</a>
           </li>
@@ -74,13 +74,13 @@ const handlemenuopen = () =>{
           </li>
         </ul>
       </div>
-      <div className='text-2xl sm:hidden text-white' onClick={handlemenuopen}>
-      <GiHamburgerMenu/>
-      </div>
       <div className='hidden md:block'>
         <Link className={'w-[130px] h-[45px] rounded-lg flex justify-center items-center bg-fontColor text-base text-BrandColor font-normal font-roboto border-[2px] border-fontColor ease-linear duration-200 hover:bg-transparent hover:text-fontColor'}>
         Send a Wish
         </Link>
+      </div>
+      <div className='text-2xl sm:hidden text-white' onClick={handlemenuopen}>
+      <GiHamburgerMenu/>
       </div>
     </div>
       </div>

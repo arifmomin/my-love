@@ -23,7 +23,7 @@ const AboutUs = () => {
               <h2 className='text-[32px] md:text-[36px] text-black font-semibold font-roboto'>About The <span className='text-fontColor'>Groom</span></h2>
               <p className='text-base text-gray-500 font-normal font-roboto mt-2 mb-4 text-center md:text-start'>I’m a dreamer and a believer in love, and my journey became even more meaningful when she came into my life. Her presence inspires me to be the best version of myself every day. With her by my side, I know there’s nothing we can’t achieve together.</p>
               <div className='flex flex-col md:flex-row gap-4 md:gap-0 items-center gap-x-8'>
-                <h3 className='text-xl text-fontColor font-medium font-caps'> <span className='hidden md:block'>~</span> Arif Momin</h3>
+                <h3 className='text-xl text-fontColor font-medium font-caps'> <span className='hidden md:contents'>~</span> Arif Momin</h3>
                 <div className='flex gap-x-2'>
                   <a className='social-icon'>
                     <FaFacebookF/>
@@ -54,7 +54,7 @@ const AboutUs = () => {
                   <FaInstagram/>
                   </a>
                 </div>
-                <h3 className='text-xl text-fontColor font-medium font-caps mb-4 md:mb-0'> <span className='hidden md:block'>~</span> Kajol Akter</h3>
+                <h3 className='text-xl text-fontColor font-medium font-caps mb-4 md:mb-0'> <span className='hidden md:contents'>~</span> Kajol Akter</h3>
               </div>
             </div>
             <div className='max-w-full w-[200px] sm:w-[220px] h-[200px] sm:h-[220px] md:w-[276px] md:h-[276px]'>
